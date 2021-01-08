@@ -1,0 +1,59 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm text-white navbar-dark" style="background-color: #48C616 ">
+  <a class="navbar-brand" href="{% url 'hm' %}">
+    <img src="{% static 'images/bike2.jpg' %}" alt="logo" style="width:80px; margin-left: 50px; margin-top: 9px;" class="border rounded">
+  </a>
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <!-- Links-->
+  <ul class="navbar-nav">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'hm' %}"><b><big>Home</big></b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'ab' %}"><b><big>About us</big></b></a>
+    </li>
+    <li class="nav-iteam">
+      <a class="nav-link text-white" href="{% url 'ct' %}"><b><big>Contact us</big></b></a>
+    </li>
+    <li class="nav-iteam">
+      <a class="nav-link text-white" href="{% url 'reg' %}"><b><big>Register</big></b></a>
+    </li>
+    {% else %}
+        <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'hm' %}"><b><big>Home</big></b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'dsh' %}"><b><big>Dashboard</big></b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'or' %}"><b><big>Your Order</big></b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="{% url 'dc' %}"><b><big>All Companies</big></b></a>
+    </li>
+    {% endif %}
+  </ul>
+  <ul class="navbar-nav ml-auto" style="margin-right: 110px;">
+    {% if not user.is_authenticated %}
+    <li class="nav-iteam">
+      <a class="nav-link text-white" href="{% url 'lgn' %}"><b><big>Login</big></b></a>
+    </li>
+    {% else %}
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-dark" data-toggle="dropdown"><img src="{{user.exfd.impf.url}}" height="23px" width="25px" class="rounded-circle"/></a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="{% url 'pfe' %}">Profile</a>
+          <a class="dropdown-item" href="#">Change Password</a>
+           <a class="dropdown-item" href="#">Settings</a>
+          <a class="dropdown-item" href="{% url 'lgo' %}">Logout</a>
+        </div>      
+    </li>
+    {% endif %}
+  </ul>
+</div>
+</nav>

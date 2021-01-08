@@ -1,0 +1,40 @@
+{% extends 'sd/base.html' %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+{% load static %}
+<div class="container border rounded" style="background-color: #66ffff">
+	<div>
+		<h2 class="text-center btn-primary border rounded"><big><b class="text-center">Model Two</b></big></h2>
+	<div class="text-center">
+		<h2>Honda CBR600F4</h2>
+		<img src="{% static 'images/need.jpg' %}" height="400px" width="55%" class="border rounded">
+	</div>
+		<big>
+			<h6 style="margin-left: 20px"><b>Manufacture</b>   :   Honda Motor Company</h6>
+			<h6 style="margin-left: 20px"><b>Also called</b>   :   Honda</h6>
+			<h6 style="margin-left: 20px"><b>Production</b>    :   Since 2013</h6>
+			<h6 style="margin-left: 20px"><b>Predecessor</b>   :   Honda CBR600F4i</h6>
+			<h6 style="margin-left: 20px"><b>Class</b>         :   Sport bike</h6>
+			<h6 style="margin-left: 20px"><b>Related</b>       :   Honda CBR1000RR Honda RC211V Honda RC212V</h6>
+			<h6 style="margin-left: 20px"><b>Prize</b>         :   1,00,000</h6>
+		</big><br>
+		<a href="{% url 'cor' %}" class="btn btn-success">Book Now</a>
+		<a href="{% url 'hm' %}" class="btn btn-success" style="margin-left: 800px">Go To Home Page</a><br>
+		<p class="text-center">
+			<h2>CBR600F4i (2001–2006)</h2>
+			The CBR600F4i was produced from 2001 to 2006. The upgraded F4i is a modified F4 with numerous engine, chassis and bodywork changes.
+
+			The 2001 US F4i had a new subframe which raises the seat by 5 mm (0.2 in) that allows for more storage room and improved two-tier seat.[8] The new tail unit has less padding and a higher perch for the passenger. The F4i's taillight is smaller with a new dual-bulb configuration. The F4i had a new dash layout with a large analog tachometer. The new LCD digital display had a speedometer, odometer, clock, engine temperature read-out, amber shift light and trip meters. The single largest change aside from the styling is the addition of high-pressure 50 psi (340 kPa)[9] PGM-FI (programmed fuel injection) system — thus the model designation "F4i". In a number of countries, the bike was sold in both the "normal" and "Sport" variants, the Sport having a two-part seat, no grab rail and no main stand (though the main stand mounting holes remained). Fuel injection allows for more precise fuel metering and delivery over a wider rpm range, while providing better throttle response and reducing emissions. The injectors reside one per cylinder and work with 38 mm (1.5 in) throttle bodies. Each injector has four nozzles, and together the injectors add up to 3.7 kW (5 hp; 5 PS) over the F4.
+		</p>
+
+		<p>
+			<h3><b>2015-Present</b></h3><hr>
+			At the centennial EICMA motorcycle show, Yamaha officially unveiled a new generation of R1.[11] It is similar to MotoGP's 2005–Present YZR M1. Yamaha claims a wet weight of 199 kg (439 lb)[12] The new bike has an electronics package that includes a sophisticated Traction Control (TCS) and Slide Control System (SCS), antiwheelie Lift Control System (LIF), linked antilock brakes, Launch Control System (LCS), Quick Shift System (QSS), and selectable power modes. The Slide Control System on the Yamaha YZF-R1 is the first on a production motorcycle.[13][14] Information is fed to the bike through a six-axis gyro (Inertial measurement unit) and other sensors over 100 times a second.[14] Power delivery is tapered through manipulation of the throttle butterfly and ignition and fuel cuts.[15] Engine changes include shortened bore-to-stroke ratio, larger airbox, a finger-follower valve system, and fracture split titanium conrods.[13] It comes standard with magnesium wheels. Information is presented to the rider through a user-customizable thin-film display.[13]
+
+			A second higher-spec, limited production model is also produced called the R1M, and is differentiated from the standard model by having more expensive components such as electronic semi-active Öhlins suspension, carbon fiber bodywork, Yamaha's Communication Control Unit (CCU), Y-TRAC data logging system, and stickier Bridgestone tires with larger rear 200/55-size. A third model starting in 2016 is also offered a lower-spec R1S.[16][17]
+		</p>
+		<br>
+		<marquee behavior="scroll" direction="right" class="btn btn-dark" style="background-color: #0000b3">The Bikes Showroom will Give Excellent Models</marquee>
+	</div>
+</div>
+{% endblock %}

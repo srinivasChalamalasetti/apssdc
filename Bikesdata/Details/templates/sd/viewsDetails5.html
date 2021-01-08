@@ -1,0 +1,50 @@
+{% extends 'sd/base.html' %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+{% load static %}
+<div class="container border rounded" style="background-color: #a3c2c2">
+	<div>
+		<h2 class="text-center btn-primary border rounded"><big><b class="text-center">Model Five</b></big></h2>
+	<div class="text-center">
+		<h2><b>Ducati</b></h2>
+		<img src="{% static 'images/download19.jpg' %}" height="400px" width="55%" class="border rounded">
+	</div>
+		<big>
+			<h6 style="margin-left: 20px"><b>Manufacture</b>   :   Ducate</h6>
+			<h6 style="margin-left: 20px"><b>Also called</b>   :   Ducate bike</h6>
+			<h6 style="margin-left: 20px"><b>Production</b>    :   2008-2013</h6>
+			<h6 style="margin-left: 20px"><b>Predecessor</b>   :   Ducati 749</h6>
+			<h6 style="margin-left: 20px"><b>Class</b>         :   Sport bike</h6>
+			<h6 style="margin-left: 20px"><b>Successor</b>     :   Ducati 899</h6>
+			<h6 style="margin-left: 20px"><b>Related</b>       :   Ducati 1198</h6>
+			<h6 style="margin-left: 20px"><b>Cost</b>          :   95,000</h6>
+		</big><br>
+		<a href="{% url 'cor' %}" class="btn btn-success">Book Now</a>
+		<a href="{% url 'hm' %}" class="btn btn-success" style="margin-left: 800px">Go To Home Page</a><br>
+		<p>
+			The Ducati 749 is a 90° V-twin Desmodromic valve actuated engine sport bike built by Ducati Motor Holding between 2003 and 2006. Designed by Pierre Terblanche, the 749 was available as the 749, 749 Dark, 749S, and 749R. It shared many of its parts with the 999, with the exception of a slightly smaller 180/55 profile rear tire, smaller cylinders, and different cylinder heads, giving it a smaller displacement of 748 cc. This smaller engine is higher revving and produces a lower peak horsepower than the larger engine used in the 999. The 749S model, like the 999, incorporates features rarely found on production motorcycles, including adjustable rake (23.5° or 24.5°) and five-position adjustable rearset mounts.<br>
+
+			A limited number of the 749 were manufactured as a race version — the 749R — each with their production number stamped on the triple clamp – and initially cost almost twice the original 749 base model. This race model was lighter, had a shorter stroke, increased bore and larger valves which allowed it to run more efficiently at higher RPM, and hence, produced more torque and power than the 749/S models. The 749R also came with a larger fuel tank (18.3 L or 4.0 imp gal or 4.8 US gal); slipper clutch; Öhlins forks, shock and steering damper; racing cams; titanium valves, valve guides, and connecting rods; magnesium head covers, and carbon fiber belt covers. Its 2004 model had carbon fiber fairings.<br>
+
+			The 749 was replaced by the Ducati 848 for the 2008 model year.
+		</p>
+		<p>
+			<h3>DTSi</h3>
+			DTSi stands for Digital Twin Spark Ignition, a Bajaj Auto trademark. Bajaj Auto holds an Indian patent for the DTSi technology. The Alfa Romeo Twin-Spark engines, the BMW F650 Funduro which was sold in India from 1995 to 1997 also had a twin-spark plug technology, and the Rotax motorcycle engines, more recently Honda's iDSI Vehicle engines use a similar arrangement of two spark-plugs. However very few small capacity engines did eventually implement such a scheme in their production prototypes.<br>
+			<h3>Patent infringement</h3>
+			In September 2007, Bajaj Auto filed a claim accusing that the development of TVS Flame was in violation of their patent for DTS-I.[33] TVS Motors decided to sue Bajaj Auto for libel.[34][35] In February 2008, the Madras High Court in Chennai restrained TVS from launching it with the twin spark plug technology.[36] TVS appealed against this decision, claiming that crucial evidence was not taken into account[37] and in March 2008, launched the Flame with a modified engine containing one spark plug.[38] The DTSi idea is a simple one to understand – it involved usage of two spark plugs (instead of one) per engine cylinder. On 16 September 2009, the Supreme Court of India permitted TVS Motors to manufacture and sell the 125 cc TVS Flame with Twin Spark Technology[39] till the pendency of the suit before the Madras High Court, but it shall maintain accurate records of its sales all over the country.
+			<h2><b>Classic</b></h2>
+			Front suspension: Showa 43 mm upside-down fully adjustable fork
+			Front wheel travel: 125 mm (4.9 in)
+			Front wheel: Y-shaped 5-spoke light alloy 3.50 x 17
+			Rear suspension: Progressive linkage with fully adjustable Sachs monoshock
+			Rear wheel travel: 128 mm (5.0 in)
+			Rear wheel: Y-shaped 5-spoke light alloy 5.50 x 17
+			Instruments: Speedometer, tachometer, high beam indicator, turn signals, oil pressure warning light, low fuel warning light, neutral light, water temperature, outside temperature gauge, fuel consumption, battery voltage, immobilizer system
+			Versions: Biposto & Monoposto
+		</p>
+		<br>
+		<marquee behavior="scroll" direction="right" class="btn btn-dark" style="background-color: #0000b3">The Bikes Showroom will Give Excellent Models</marquee>
+	</div>
+</div>
+{% endblock %}

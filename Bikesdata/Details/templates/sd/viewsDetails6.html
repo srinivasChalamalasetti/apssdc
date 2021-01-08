@@ -1,0 +1,40 @@
+{% extends 'sd/base.html' %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+{% load static %}
+<div class="container border rounded" style="background-color: #ff4d94">
+	<div>
+		<h2 class="text-center btn-primary border rounded"><big><b class="text-center">Model Four</b></big></h2>
+	<div class="text-center">
+		<h2><b>Honda CBR600RR</b></h2>
+		<img src="{% static 'images/need1.jpg' %}" height="400px" width="55%" class="border rounded">
+	</div>
+		<big>
+			<h6 style="margin-left: 20px"><b>Manufacture</b>   :   Honda</h6>
+			<h6 style="margin-left: 20px"><b>Also called</b>   :   Firelade</h6>
+			<h6 style="margin-left: 20px"><b>Production</b>    :   Since 2004(Seventh-generation)</h6>
+			<h6 style="margin-left: 20px"><b>Predecessor</b>   :   Honda CBR954RR</h6>
+			<h6 style="margin-left: 20px"><b>Class</b>         :   Sportbike</h6>
+			<h6 style="margin-left: 20px"><b>Related</b>       :   Honda CBR600RR</H6><br>
+			<h6 style="margin-left: 20px"><b>Cost</b>          :  99,000</h6>
+		</big><br>
+		<a href="{% url 'cor' %}" class="btn btn-success">Book Now</a>
+		<a href="{% url 'hm' %}" class="btn btn-success" style="margin-left: 800px">Go To Home Page</a><br>
+		<p>
+			<h2>CBR900RR (893cc) SC28</h2>
+			The first generation CBR900RR was introduced in 1992 with an 893 cc (54.5 cu in) inline-four engine. It set a precedent for lightweight in the superbike class, being much lighter than other large-displacement bikes of the time. The CBR900RR was based on an advanced research stage model known within Honda as the "CBR750RR". With the objective of equaling the acceleration of competitors’ flagship sport bikes, Honda increased the stroke of its inline 4-cylinder 750 cc engine and thus raised displacement to 893cc. Complementing its power performance was the bike's dry weight of just 185 kg,<br> wheelbase of 1,405 mm, and a body almost identical to that of the advanced research stage model. At 453 lb (205 kg) wet weight, it was by just 4 lb (2 kg) heavier than the CBR600F2, while the next-lightest over-750cc machine, the Yamaha FZR1000, was heavier by 76 lb (34 kg).<br>
+
+			Changes for the 1994 model comprise a new shift-drum to improve notchy gear shifts. The second-generation CBR900RR, which debuted in 1995,[1] incorporated changes in damping rates and spring rates. The front fork was upgraded with a compression adjuster. The upper cowl stay went from steel to aluminum, and the cylinder head cover went from aluminum to magnesium. The styling of the bike also became more aggressive: The independent dual lights became irregular-shaped multi-reflector lights known as "fox eyes" set further back and covered to improve aerodynamics, and the bike had fewer of the RR's unique fairing "speed" holes. The footpegs were firmer and slimmer like that of the RC45 and the reversed pedal on the original was replaced with a shift linkage. Instead of measuring speed from the front wheel, the speed is measured from the countershaft sprocket with an electronic speedometer.
+			<h3>References</h3>
+			20 Years of Evolution. Timeline, CBR900/CBR1000 Honda Worldwide, Retrieved June 3, 2016
+ 			Kunitsugu, Kent (February 2, 2009). "Sharpened Scalpel: Honda CBR954RR road test". Sport Rider. Retrieved March 15, 2016.
+ 			Motor Cycle News (UK weekly newspaper) 23 March 1994, pp.48-49 The Price of Power (TTS tuning), Richard Fincher. Accessed and added 2015-10-12
+			CBR919RR Specifications motorsports-network.com
+ 			CBR929RR Specifications motorsports-network.com
+ 			CBR954RR Specifications motorsports-network.com
+		</p>
+		<br>
+		<marquee behavior="scroll" direction="right" class="btn btn-dark" style="background-color: #0000b3">The Bikes Showroom will Give Excellent Models</marquee>
+	</div>
+</div>
+{% endblock %}

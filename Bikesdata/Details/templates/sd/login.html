@@ -1,0 +1,22 @@
+{% extends 'sd/base.html' %}
+{% block title %} Login {% endblock %}
+{% block content %}
+<div class="container">
+	{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+	</div>
+	{% endfor %}
+	{% endif %}
+	<div class="card col-md-6 mx-auto mt-4 shadow-lg" style="background-color: #85e0e0;">
+		<h2 class="bg-dark text-white text-center mx-2 my-2 p-2 border rounded">Login Page</h2>
+		<form class="mx-3" method="post">
+			{% csrf_token %}
+			<input type="text" name="username" placeholder="Enter Username" class="form-control my-2">
+			<input type="password" name="password" placeholder="Enter Password" class="form-control my-2">
+			<input type="submit" name="Login" class="btn btn-block btn-success mb-3 mt-1">
+		</form>
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'sd/base.html' %}
+{% block title %} Profile {% endblock %}
+{% block content %}
+{% load static %}
+<div class="container border rounded" style="background-color: #a3c2c2">
+	<div>
+		<h2 class="text-center btn-primary border rounded"><big><b class="text-center">Model One</b></big></h2>
+	<div class="text-center">
+		<h2><b>Yamaha R1</b></h2>
+		<img src="{% static 'images/bike21.jpg' %}" height="400px" width="55%" class="border rounded">
+	</div>
+		<big>
+		<h3 style="margin-left: 20px"><b>Manufacture</b>   :   Yamaha Motor Company</h3>
+		<h3 style="margin-left: 20px"><b>Also called</b>   :   Yamaha R1</h3>
+		<h3 style="margin-left: 20px"><b>Production</b>    :   1998-present</h3>
+		<h3 style="margin-left: 20px"><b>Predecessor</b>   :   Yamaha YZF1000R</h3>
+		<h3 style="margin-left: 20px"><b>Class</b>         :   Sport bike[1]</h3>
+		<h3 style="margin-left: 20px"><b>Related</b>       :   Yamaha YZF-R6 MT-10</h3>
+		<h3 style="margin-left: 20px"><b>Cost</b>          :   1,50,000</h3>
+		</big><br>
+		<a href="{% url 'cor' %}" class="btn btn-success">Book Now</a>
+		<a href="{% url 'hm' %}" class="btn btn-success" style="margin-left: 800px">Go To Home Page</a><br>
+		<p>
+			Yamaha launched the YZF-R1 after redesigning the Genesis engine to create a more compact engine by raising the gearbox input shaft and allowing the gearbox output shaft to be placed beneath it. This 'stacked gearbox' was followed by other manufacturers. Compacting the engine made the engine much shorter, allowing the wheelbase to be shortened. This allowed the frame design to place the weight of the engine in the frame to aid handling because of an optimized center of gravity. The swingarm could be made longer without compromising the overall wheelbase, which was a short 1,385 mm (54.5 in). Four 40 mm Keihin CV carburetors fed fuel to the engine. It had KYB upside down 41 mm front forks and 300 mm semi-floating disk brakes. The instrument panel was electrical with a self diagnosis system and digital speed readout. The exhaust system used Yamaha's Exhaust Ultimate Power Valve (EXUP), which controlled the exhaust gas flow to maximize engine power production at all revs. This created a high powered and high torque engine. The Yamaha YZF-R6 was introduced in 1999 as the 600 cc version of the R1 super bike.
+		</p>
+
+		<p>
+			<h3><b>2015-Present</b></h3><hr>
+			At the centennial EICMA motorcycle show, Yamaha officially unveiled a new generation of R1.[11] It is similar to MotoGP's 2005–Present YZR M1. Yamaha claims a wet weight of 199 kg (439 lb)[12] The new bike has an electronics package that includes a sophisticated Traction Control (TCS) and Slide Control System (SCS), antiwheelie Lift Control System (LIF), linked antilock brakes, Launch Control System (LCS), Quick Shift System (QSS), and selectable power modes. The Slide Control System on the Yamaha YZF-R1 is the first on a production motorcycle.[13][14] Information is fed to the bike through a six-axis gyro (Inertial measurement unit) and other sensors over 100 times a second.[14] Power delivery is tapered through manipulation of the throttle butterfly and ignition and fuel cuts.[15] Engine changes include shortened bore-to-stroke ratio, larger airbox, a finger-follower valve system, and fracture split titanium conrods.[13] It comes standard with magnesium wheels. Information is presented to the rider through a user-customizable thin-film display.[13]
+
+			A second higher-spec, limited production model is also produced called the R1M, and is differentiated from the standard model by having more expensive components such as electronic semi-active Öhlins suspension, carbon fiber bodywork, Yamaha's Communication Control Unit (CCU), Y-TRAC data logging system, and stickier Bridgestone tires with larger rear 200/55-size. A third model starting in 2016 is also offered a lower-spec R1S.[16][17]
+		</p>
+		<p>
+			<h3><b>MotorSport</b></h3>
+			The bike had five wins in the Macau Grand Prix between 1999 and 2013. Lorenzo Alfonsi won the 2004 FIM Superstock 1000 Cup, followed by Didier Van Keymeulen in 2005.[36] Yamaha World Superbike riders Troy Corser and Noriyuki Haga finished 2nd and 3rd respectively in the 2008 Superbike World Championship season.[36] Yamaha World Superbike rider Ben Spies won the 2009 Superbike World Championship season title recording 14 wins and 11 poles in his one season in WSBK.[36] The Yamaha Factory Racing Team with riders N. Nakasuga, P. Espargaro, and B. Smith won the 2015 Suzuka 8 Hours endurance race.[37] Katsuyuki Nakasuga, Alex Lowes, Pol Espargaro won the 2016 Suzuka 8 Hours endurance Race. Tommy Hill won the British Superbike title in 2011 on board a YZF-R1. Yamaha rider Josh Brookes won the 2015 British Superbike series title.
+		</p>
+		<br>
+		<marquee behavior="scroll" direction="right" class="btn btn-dark" style="background-color: #0000b3">The Bikes Showroom will Give Excellent Models</marquee>
+	</div>
+</div>
+{% endblock %}

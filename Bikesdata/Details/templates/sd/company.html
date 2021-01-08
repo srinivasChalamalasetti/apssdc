@@ -1,0 +1,50 @@
+{% extends 'sd/base.html' %}
+{% block title %} Companies {% endblock %}
+{% block content %}
+{% load static %}
+<div class="container mt-4">
+	<div class="row">
+		<div class="ml-auto">
+			<a href="{% url 'hm' %}">
+			<h4 class="text-center"><b>Yamaha Bikes</b></h4>
+			<img src="{% static 'images/com.jpg' %}" height="180px" width="100%" class="border rounded">
+			</a>
+		</div>
+		<div class="ml-auto">
+			<a href="{% url 'hm' %}">
+			<h4 class="text-center"><b>Honda Bikes</b></h4>
+			<img src="{% static 'images/com18.jpg' %}" height="180px" width="100%" class="border rounded">
+			</a>
+		</div>
+		<div class="ml-auto">
+			<a href="{% url 'hm' %}">
+			<h4 class="text-center"><b>Suzuki Bikes</b></h4>
+			<img src="{% static 'images/com19.jpg' %}" height="180px" width="100%" class="border rounded">
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-4">
+	<div class="row">
+		<div class="ml-auto">
+			<a href="{% url 'hm' %}">
+			<h4 class="text-center"><b>Bajaj Bikes</b></h4>
+			<img src="{% static 'images/com20.jpg' %}" height="180px" width="100%" class="border rounded">
+			</a>
+		</div>
+		<div class="ml-auto">
+			<a href="{% url 'hm' %}">
+			<h4 class="text-center"><b>Ducati Bikes</b></h4>
+			<img src="{% static 'images/cm.jpg' %}" height="180px" width="100%" class="border rounded">
+			</a>
+		</div>
+		<div class="ml-auto">
+			<a href="{% url 'hm' %}">
+			<h4 class="text-center"><b>Royal Enfield Bikes</b></h4>
+			<img src="{% static 'images/c.jpg' %}" height="180px" width="100%" class="border rounded">
+			</a>
+		</div>
+	</div>
+</div>
+{% endblock %}

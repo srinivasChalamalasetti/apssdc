@@ -1,0 +1,148 @@
+{% extends 'sd/base.html' %}
+{% block title %} Home {% endblock %}
+{% block content %}
+<div class="container mt-4">
+	<div class="ml-auto">
+		<div class="w3-container">
+			<h2><b>Advanced Bike models</b></h2>
+			<p style="font-family: Times New Roman"><i>Gives the Better Experinces</i></p>
+		</div>
+		<div class="w3-content w3-section" style="max-width:900px">
+			<img class="mySlides" src="images/need1.jpg" style="width:100%">
+			<img class="mySlides" src="images/need2.jpg" style="width:100%">
+			<img class="mySlides" src="images/need3.jpg" style="width:100%">
+			<img class="mySlides" src="images/need4.jpg" style="width:100%">
+			<img class="mySlides" src="images/need5.jpg" style="width:100%">
+			<img class="mySlides" src="images/need6.jpg" style="width:100%">
+			<img class="mySlides" src="images/need7.jpg" style="width:100%">
+		</div>
+		<script>
+			var myIndex = 0;
+			carousel();
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}
+					x[myIndex-1].style.display = "block";
+				setTimeout(carousel, 2000);
+			}
+		</script>
+	</div>
+</div>
+<div class="container">
+	<div class="row mt-4">
+		<div class=" card col-md-3 col-sm-3 mx-3 my-3" style="background-color: #6666ff">
+			<h3 class="bg-primary text-center text-white  border rounded">Bike 1</h3>
+			<small class="text-center text-dark"><b>Yamha R1</b></small>
+			<img src="images/bike21.jpg" style="height: 150px" class="border rounded">
+			<h6><b>Manufacture</b>   :   Yamaha Motor Company</h6>
+			<h6><b>Also called</b>   :   Yamaha R1</h6>
+			<h6><b>Production</b>    :   1998-present</h6>
+			<h6><b>Predecessor</b>   :   Yamaha YZF1000R</h6>
+			<h6><b>Class</b>         :   Sport bike[1]</h6>
+			<h6><b>Related</b>       :   Yamaha YZF-R6 MT-10</h6>
+			<a href="{% url 'vd1' %}" style="background-color: #30ADA0" class="border rounded text-center text-white">View Deatils</a>
+		</div>
+		<div class="card col-md-3 col-sm-3 mx-3 my-3" style="background-color: #66e0ff">
+			<h3 class="bg-primary text-center text-white  border rounded">Bike 2</h3>
+			<small class="text-center text-dark"><b>Honda CBR600RR</b></small>
+			<img src="images/need.jpg" style="height: 150px" class="border rounded">
+			<h6><b>Manufacture</b>   :   Honda Motor Company</h6>
+			<h6><b>Also called</b>   :   Honda</h6>
+			<h6><b>Production</b>    :   Since 2013</h6>
+			<h6><b>Predecessor</b>   :   Honda CBR600F4i</h6>
+			<h6><b>Class</b>         :   Sport bike</h6>
+			<h6><b>Related</b>       :   Honda CBR1000RR Honda RC211V Honda RC212V</h6>
+			<a href="{% url 'vd2' %}" style="background-color: #30ADA0" class="border rounded text-center text-white">View Deatils</a>			
+		</div>
+		<div class="card col-md-3 col-sm-3 mx-3 my-3" style="background-color: #ff8566">
+			<h3 class="bg-primary text-center text-white  border rounded">Bike 3</h3>
+			<small class="text-center text-dark"><b>Suzuki Hayabusa</b></small>
+			<img src="images/need6.jpg" style="height: 150px" class="border rounded">
+			<h6><b>Manufacture</b>   :   Suzuki Company</h6>
+			<h6><b>Also called</b>   :   GSX1300R,'Busa[1]Toyokawa Plant, Toyokawa</h6>
+			<h6><b>Assembly</b>      :   Toyokawa Plant, Toyokawa,Aichi,japan <br> Suzuki Gurdon Plant Gurgaron,india</h6>
+			<h6><b>Predecessor</b>   :   Honda CBR600F4i</h6>
+			<h6><b>Class</b>         :   Sportbike</h6>
+			<!-- <h6><b>Top Speed</b>     :   <b>1999</b> 303-312 km/h <br> (188-194-mph) <br> <b>2000-Present</b> 299 km/h <br> (186 mph)</h6>
+			<h6><b>Related</b>       :   Suzuki B-King</h6> -->
+			<a href="{% url 'vd3' %}" style="background-color: #30ADA0" class="border rounded text-center text-white">View Deatils</a>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row mt-4">
+		<div class=" card col-md-3 col-sm-3 mx-3 my-3" style="background-color: #ff66ff">
+			<h3 class="bg-primary text-center text-white  border rounded">Bike 4</h3>
+			<small class="text-center text-dark"><b>Bajaj Pulsar</b></small>
+			<img src="images/bike2.jpg" style="height: 150px" class="border rounded">
+			<h6><b>Manufacture</b>   :   Bajaj Auto Company</h6>
+			<h6><b>Also called</b>   :   Bajaj Motors</h6>
+			<h6><b>Production</b>    :   2001-present</h6>
+			<h6><b>Predecessor</b>   :   Bajaj Pilsar NS160</h6>
+			<h6><b>Class</b>         :   Standard, Mini sport</h6>
+			<h6><b>Engine</b>        :   125/135/150/160/180/200/220 cc <br> Air-cooled/oil-cooled/liquid cooled</h6><br>
+			<a href="{% url 'vd4' %}" style="background-color: #30ADA0" class="border rounded text-center text-white">View Deatils</a>
+		</div>
+		<div class="card col-md-3 col-sm-3 mx-3 my-3" style="background-color: #a3c2c2">
+			<h3 class="bg-primary text-center text-white  border rounded">Bike 5</h3>
+			<small class="text-center text-dark"><b>Ducate 848</b></small>
+			<img src="images/download19.jpg" style="height: 150px" class="border rounded">
+			<h6><b>Manufacture</b>   :   Ducate</h6>
+			<h6><b>Also called</b>   :   Ducate bike</h6>
+			<h6><b>Production</b>    :   2008-2013</h6>
+			<h6><b>Predecessor</b>   :   Ducati 749</h6>
+			<h6><b>Class</b>         :   Sport bike</h6>
+			<h6><b>Successor</b>     :   Ducati 899</h6>
+			<h6><b>Related</b>       :   Ducati 1198</h6><br>
+			<a href="{% url 'vd5' %}" style="background-color: #30ADA0" class="border rounded text-center text-white">View Deatils</a>
+		</div>
+		<div class="card col-md-3 col-sm-3 mx-3 my-3" style="background-color: #ffff66">
+			<h3 class="bg-primary text-center text-white  border rounded">Bike 6</h3>
+			<small class="text-center text-dark"><b>Honda CBR1000RR</b></small>
+			<img src="images/need1.jpg" style="height: 150px" class="border rounded">
+			<h6><b>Manufacture</b>   :   Honda</h6>
+			<h6><b>Also called</b>   :   Firelade</h6>
+			<h6><b>Production</b>    :   Since 2004(Seventh-generation)</h6>
+			<h6><b>Predecessor</b>   :   Honda CBR954RR</h6>
+			<h6><b>Class</b>         :   Sportbike</h6>
+			<H6><b>Related</b>       :   Honda CBR600RR</H6><br>
+			<a href="{% url 'vd6' %}" style="background-color: #30ADA0" class="border rounded text-center text-white">View Deatils</a>
+		</div>
+	</div>
+</div>
+<hr><br>
+
+<div class="footer">
+	<div class="row mt-3">
+		<div class="col-md-3 col-sm-3 mx-2 my-2">
+			<ul class="ml-auto">
+				<li>Indices</li>
+				<li>Report</li>
+				<li>Data Base</li>
+			</ul>
+		</div>
+		<div class="col-md-3 col-sm-3 mx-2 my-2">
+			<ul class="text-white">
+				<li>About</li>
+				<li>News&Report</li>
+				<li>Contact</li>
+			</ul>
+		</div>
+		<div class="col-md-3 col-sm-3 mx-2 my-2">
+			<ul class="text-white">
+				<li>Media Contact</li>
+				<li>Advertise</li>
+				<li>Carrers</li>
+			</ul>
+		</div>
+		<h4 style="margin-left: 500px">Copyrights@ Terms Pravicy Reedty Lt.2025</h4>
+		<marquee behavior="scroll" direction="right" class="btn btn-dark" style="background-color: #00004d">Our Bikes Showroom will Give Excellent Models</marquee>
+	</div>
+</div>
+{% endblock %}
